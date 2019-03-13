@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Petemuan 2</title>
+</head>
+
+<body>
+A :<input type="text" id="nilaiA"> <br>
+B : <input type="text" id="nilaiB"> <br>
+<button onclick='tambah()'> Tambah </button>
+<br>
+
+<h1 id="hasil"></h1>
+
+<script>
+// get data A
+function tambah() {
+    var dataA = document.getElementById('nilaiA').value;
+    var dataB = document.getElementById('nilaiB').value;
+    console.log(dataA, dataB);
+    var total = Number(dataA) + Number(dataB);
+    // set h1
+    document.getElementById('hasil').innerHTML = total;
+}
+
+
+
+        // Tipe Data : String
+        // var hari = 'Senin';
+
+        // set html
+        // document.getElementById("h1").innerHTML = hari;
+
+        // get html
+        // var nilai = document.getElementById("nilai").value;
+
+        // function getData() {
+        //     alert(document.getElementById("nilai").value)
+        // }
+
+
+
+
+
+
+        // Tipe Data : Number
+        // var jam = 10;
+        // // Tipe Data : Boolean
+        // var isLogin = false;
+
+        // // console.log(hari, jam, isLogin);
+
+        // var uangToni = 10000;
+        // var uangAnto = 20000;
+        // var totalUang = uangToni + uangAnto;
+
+        // akan muncul alert
+        // alert("Total Uang : " + totalUang);
+
+        // akan muncul promt
+        // var total = prompt("Total Uang?");
+        // console.log(total);
+    </script>
+</body>
+
+</html>

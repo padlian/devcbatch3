@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Petemuan 2</title>
+</head>
+
+<body>
+    password : <input type="text" id="password"> <br>
+    re-password : <input type="text" id="rePassword"> <br>
+    <button onclick='cek()'> Submit </button>
+    <br>
+
+    <h1 id="hasil"></h1>
+
+    <script>
+        // Looping
+        // while
+        let tahun = 2000;
+        while (tahun <= 2019) {
+            // console.log(tahun);
+            tahun = tahun + 1;
+        }
+
+        // for
+        for (let i = 0; i <= 10; i++) {
+            // console.log("a: ", i);
+        }
+
+        // while
+        var deret = 5;
+        var jumlah = 0;
+        while (deret > 0) { // Loop akan terus berjalan selama nilai deret masih di atas 0
+            jumlah += deret; // Menambahkan nilai variable jumlah dengan angka deret
+            deret--; // Mengubah nilai deret dengan mengurangi 1
+            // console.log('Jumlah saat ini: ' + jumlah)
+        }
+
+        // console.log("Jumlah Akhir : ", jumlah);
+
+        var jumlah = 0;
+        for (var deret = 5; deret > 0; deret--) {
+            jumlah += deret;
+            console.log('Jumlah saat ini: ' + jumlah);
+        }
+
+        console.log('Jumlah terakhir: ' + jumlah);
+
+        let a = 8080808;
+        let b = 393;
+
+        console.log(a/b);
+
+        // ex:
+
+        function cek() {
+            // var pass = document.getElementById('password').value;
+            // var rePass = document.getElementById('rePassword').value;
+            // console.log("pass : ", pass, "rePAss :", rePass);
+
+            // if (pass == rePass) {
+            //     alert("Ya");
+            // } else {
+            //     alert("Tidak");
+            // }
+
+            // var total = Number(dataA) + Number(dataB);
+            // set h1
+            // document.getElementById('hasil').innerHTML = total;
+        }
+    </script>
+</body>
+
+</html>

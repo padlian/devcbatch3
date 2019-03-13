@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Petemuan 2</title>
+</head>
+
+<body>
+    password : <input type="text" id="password"> <br>
+    re-password : <input type="text" id="rePassword"> <br>
+    <button onclick='cek()'> Submit </button>
+    <br>
+
+    <h1 id="hasil"></h1>
+
+    <script>
+        var a = 2;
+        var b = 2;
+
+
+        var nilai = 65;
+
+        if (nilai >= 80) {
+            // alert("Nilai A");
+        } else if (nilai < 80 && nilai >= 70) {
+            // alert("Nilai B");
+        } else if (nilai < 70 && nilai >= 60) {
+            // alert("Nilai C");
+        }
+
+        // cth : OR ||
+        var ownKTP = true;
+        var ownSIM = false;
+        if (ownKTP || ownSIM) {
+            alert(" saya bisa beli tiket");
+        }
+
+        // cth: AND &&
+        var ownKTP = true;
+        var ownSIM = false;
+        if (true && false) {
+            alert(" saya bisa beli tiket ");
+        }
+
+        function cek() {
+            var pass = document.getElementById('password').value;
+            var rePass = document.getElementById('rePassword').value;
+            console.log("pass : ", pass, "rePAss :", rePass);
+
+            if (pass == rePass) {
+                alert("Ya");
+            } else {
+                alert("Tidak");
+            }
+
+            // var total = Number(dataA) + Number(dataB);
+            // set h1
+            // document.getElementById('hasil').innerHTML = total;
+        }
+    </script>
+</body>
+
+</html>
