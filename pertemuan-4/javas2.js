@@ -17,5 +17,10 @@
 
 $(".tombol").click(function(){
 	var warna = $(this).html();
-	$("#kotak").css("background", warna);
+	if(warna == "RESET"){
+		location.reload();
+	}
+	else{
+		$("#kotak").css("background", warna);
+	}
 });
